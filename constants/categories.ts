@@ -58,5 +58,11 @@ export const categories = [
         title: "Cars",
         slug: "cars",
         icon: "🚘"
+    },
+    {
+        id: 11,
+        title: "Mammals",
+        slug: "mammals",
+        icon: "🦍"
     }
 ];

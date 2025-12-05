@@ -2,8 +2,6 @@
 import { Link, router } from 'expo-router';
 import { FlatList, Pressable, StyleSheet, View, Text } from 'react-native';
 
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { categories } from '@/constants/categories';
 
@@ -44,7 +42,7 @@ export default function HomeScreen() {
                     <Text style={{ fontWeight: 900, fontSize: 48, color: "red" }}>
                         50+
                     </Text>
-                    <Text style={{ fontSize: 36 }}>Puzzle Categories</Text>
+                    <Text style={{ fontSize: 20 }}>Puzzle Categories</Text>
                 </View>
                 <FlatList 
                     renderItem={({ item }) => renderItem(item)} 

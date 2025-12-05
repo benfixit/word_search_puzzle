@@ -46,7 +46,7 @@ export default function PuzzleScreen() {
                     <Text style={{ fontWeight: 900, fontSize: 48, color: "#8F4C99" }}>
                         Freedraw
                     </Text>
-                    <Text style={{ fontSize: 36 }}>Break the drawing limits</Text>
+                    <Text style={{ fontSize: 20 }}>Break the drawing limits</Text>
                 </View>
                 <View style={{ backgroundColor: "#E2E5E6", borderWidth: 1, borderColor: "transparent", borderTopLeftRadius: 13, borderTopRightRadius: 12, }}>
                     <View style={{ padding: 12, backgroundColor: "#8F4C99", borderTopLeftRadius: 13, borderTopRightRadius: 12, display: "flex", flexDirection: "row", justifyContent: "space-between" }}>

@@ -1,12 +1,23 @@
 //@ts-nocheck
 import { createContext, ReactNode, useContext, useEffect, useState } from "react";
-import WordSearch from "@blex41/word-search";
-import { football } from "./data/football";
-import { countries } from "./data/countries";
 import { useGlobalSearchParams } from "expo-router";
+import WordSearch from "@blex41/word-search";
+
+import football from "./data/football.json";
+import countries from "./data/countries.json";
+import animals from "./data/animals.json"
+import astronomy from "./data/astronomy.json";
+import capitals from "./data/capitals.json";
+import mammals from "./data/mammals.json";
+import fishes from "./data/fishes.json";
+import music from "./data/music.json";
+import basketball from "./data/football.json";
+import cars from "./data/cars.json";
+import brands from "./data/cars.json";
+
 
 const puzzles = {
-    football, countries
+    football, countries, animals, astronomy, capitals, mammals, fishes, music, basketball, cars, brands
 };
 
 const GRID_SIZE = 8;
@@ -31,7 +42,7 @@ const PuzzleProvider = ({ children }: { children: ReactNode }) => {
     useEffect(() => {
         if (params.category) {
             // If an option is missing, it will be given a default value
-            const wordList = puzzles[params.category].slice(0, 20);
+            const wordList = puzzles[params.category].slice(0, 80);
 
             const options = {
                 cols: 8,
