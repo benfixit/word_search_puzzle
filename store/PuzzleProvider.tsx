@@ -11,13 +11,27 @@ import capitals from "./data/capitals.json";
 import mammals from "./data/mammals.json";
 import fishes from "./data/fishes.json";
 import music from "./data/music.json";
-import basketball from "./data/football.json";
+import basketball from "./data/basketball.json";
 import cars from "./data/cars.json";
-import brands from "./data/cars.json";
+import brands from "./data/brands.json";
+import birds from "./data/birds.json";
+import currencies from "./data/currencies.json";
 
 
 const puzzles = {
-    football, countries, animals, astronomy, capitals, mammals, fishes, music, basketball, cars, brands
+    football, 
+    countries, 
+    animals, 
+    astronomy, 
+    capitals, 
+    mammals, 
+    fishes, 
+    music, 
+    basketball, 
+    cars, 
+    brands,
+    birds,
+    currencies
 };
 
 const GRID_SIZE = 8;

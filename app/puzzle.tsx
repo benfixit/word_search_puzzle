@@ -21,8 +21,6 @@ export default function PuzzleScreen() {
         let newLetter = pressedLetters + letter;
         setPressedLetters(newLetter);
 
-        // const word = pressedLetters.join("");
-
         if (words.includes(newLetter)) {
             setCorrectAnswers([...correctAnswers, newLetter]);
             setPressedLetters("");
